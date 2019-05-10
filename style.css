@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: Arial; }
+
+main.people {
+  display: grid;
+  grid-gap: 30px 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 30px; }
+
+article.person {
+  position: relative;
+  width: 200px;
+  height: 231px;
+  transition: all 1s;
+  padding: 12px; }
+  article.person:hover {
+    transform: scale(1.35);
+    z-index: 1;
+    background: #eeeeee;
+    border-radius: 12px; }
+    article.person:hover .extra {
+      display: block; }
+    article.person:hover img {
+      border-radius: 60px !important; }
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px; }
+
+.extra {
+  display: none;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 12px; }
+
+.rank {
+  position: absolute;
+  top: 84px;
+  left: 164px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  color: #8B0000;
+  background: #fff; }
+
+.name {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #2F4F4F; }
+
+.details {
+  text-align: center; }
+
+.pay:before {
+  content: "$"; }
+
+@media screen and (max-width: 1000px) {
+  main.people {
+    grid-template-columns: 1fr 1fr; } }
+
+/*# sourceMappingURL=style.css.map */
